@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="vie wport" content="width=device-width, initial-scale=1">
+	<title>InAssist</title>
+	<link rel="stylesheet" href="./styles.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+	<div class="container header-body">
+		<a class="header-logo", href="/"><img class="header-logo-image" src="./images/logo.svg" alt="InAssist Logo", width="277.68" height="131"></a>
+		<nav class="header-menu">
+			<ul class="header-menu-list">
+				<li class="header-menu-item"><a href="#about" class="header-menu-link">О нас</a></li>
+				<li class="header-menu-item"><a href="#stages" class="header-menu-link">Этапы работы</a></li>
+				<li class="header-menu-item"><a href="#favors" class="header-menu-link">Услуги</a></li>
+			</ul>
+		</nav>
+		<button class="header-button button" type="button" onclick="window.contuctUsDialog.showModal()">
+			Связаться с нами
+		</button>
+	</div>
+
+	<dialog id="contuctUsDialog" class="modal-dialog">
+		<h1 class="modal-title">Связаться с нами</h1>
+		<form class="modal-dialog-form">
+			<div></div>
+			<div class="modal-dialog-form-body">
+				<div class="input-container">
+					<input id="name" placeholder="Имя" class="modal-dialog-form-input input" required>
+					<label for="name">Имя</label>
+				</div>
+
+				<div class="input-container">
+					<input id="company" placeholder="Название компании" class="modal-dialog-form-input input" required>
+					<label for="company">Название компании</label>
+				</div>
+
+
+				<div class="input-container">
+					<input id="email" placeholder="Email" type="email" class="modal-dialog-form-input input" required>
+					<label for="email">Email</label>
+				</div>
+
+				<div class="input-container">
+					<input id="phone" placeholder="Номер телефона" type="tel" class="modal-dialog-form-input input" required>
+					<label for="phone">Номер телефона</label>
+				</div>
+				
+				<div class="modal-dialog-form-body-checkbox checkbox">
+					<input type="checkbox" id="politics" required>
+					<label for="politics">
+						Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в <a href="" class="politics-link">Политике конфиденциальности</a>
+					</label>
+				</div>
+
+
+				<div class="modal-dialog-form-wrapper">
+					<button class="contuct-us-form-button button" type="submit">Отправить</button>
+				</div>
+			</div>
+		</form>
+	</dialog>
+</header>
+
+<main class="content">
+	<section class="main">
+		<div class="main-body container">
+			<div class="main-info">
+				<h1 class="main-title">
+					Инновационные <br>
+					решения для <br>
+					инновационного <br>
+					бизнеса
+				</h1>
+				<a class="main-create-ticket-button button" href="#contuct-us">Оставить заявку</a>
+			</div>
+			<img src="./images/main-image.svg" alt="InAssist" class="main-image">
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="container about-body">
+			<img src="./images/flags.svg" alt="InAssist Flags" class="about-image">
+			<div class="about-text-wrapper">
+				<h2 class="about-title">О нас</h2>
+				<ul class="about-menu">
+						<li class="about-menu-item">
+							<div class="about-menu-item-body">
+								<h3 class="about-menu-item-body-title">Мы - команда экспертов</h3>
+								<div class="about-menu-item-body-description">
+									<p>
+										помогаем бизнесу расти и развиваться, используя передовые
+										цифровые технологие и глубокую отраслевую экспертизу.
+									</p>
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="about-menu-item">
+							<div class="about-menu-item-body">
+								<h3 class="about-menu-item-body-title">Наша миссия</h3>
+								<div class="about-menu-item-body-description">
+									<p>
+										сделать управленческое консультирование доступным каждому предпринимателю, от начинающих  стартаперов до крупных компаний.
+									</p>
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="about-menu-item">
+							<div class="about-menu-item-body">
+								<h3 class="about-menu-item-body-title">Мы не только советуем</h3>
+								<div class="about-menu-item-body-description">
+									<p>
+										мы создаем эффективные стратегии, внедряем инновационные решения и сопровождаем Ваш бизнес на каждом этапе его развития.
+									</p>
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="about-menu-item">
+							<div class="about-menu-item-body">
+								<h3 class="about-menu-item-body-title">С нами вы получите</h3>
+								<div class="about-menu-item-body-description">
+									<p>
+										не просто поддержку, а реальные инструменты для масштабирования, оптимизации и достижения новых высот.
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>	
+			</div>
+		</div>
+		<div class="container about-bottom">
+			<div class="about-bottom-text">
+				<p>Доверьте нам развитие вашего бизнеса - и мы <br>Превратим ваши идем в супешные результаты!</p>
+			</div>
+		</div>
+	</section>
+	<section class="stages" id="stages">
+		<div class="container stages-body">
+			<h2 class="stages-body-title">Этапы работы</h2>
+			<ol class="stages-list">
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/file-success-one.svg" alt="Оформление заявки">
+						<figcaption>Оформление заявки</figcaption>
+					</figure>
+				</li>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/file-editing-one.svg" alt="Подписание договора">
+						<figcaption>Подписание договора</figcaption>
+					</figure>
+				</li>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/file-search-two.svg" alt="Сбор данных">
+						<figcaption>Сбор данных</figcaption>
+					</figure>
+				</li>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/file-settings-one.svg" alt="Разработка решения">
+						<figcaption>Разработка решения</figcaption>
+					</figure>
+				</li>
+				<br>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/communication.svg" alt="Обратная связь">
+						<figcaption>Обратная связь</figcaption>
+					</figure>
+				</li>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/file-settings.svg" alt="Доработка">
+						<figcaption>Доработка</figcaption>
+					</figure>
+				</li>
+				<li class="stages-list-item">
+					<figure>
+						<img src="./images/done-all.svg" alt="Готовое решение">
+						<figcaption>Готовое решение</figcaption>
+					</figure>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="favors" id="favors">
+		<div class="container favors-body">
+			<h2 class="favors-body-title">Услуги</h2>
+			<ul class="favors-list">
+				<li class="favors-item">
+					<div class="favors-card">
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">Бизнес-Консалтинг</h3>
+							<div class="favors-card-body-text">
+								<p>Занимаемся разработкой бизнес-планов, инновационных проектов,технико-экономических обоснований. Поможем Вам привлечь финансирование и вступить в технопарк.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="favors-item">
+					<div class=favors-card>
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">Рекламное продвижение</h3>
+							<div class="favors-card-body-text">
+								<p>Предлагаем профессиональное управление рекламными компаниями в Google Ads и Яндекс Директ. Привлечем к Вам новых клиентов и увеличим продажи.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="favors-item">
+					<div class="favors-card">
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">IT-Консталтинг</h3>
+							<div class="favors-card-body-text">
+								<p>Создаем сайты и разрабатываем программные решения. Внедрим в Ваши бизнес-процессы цифровые технологии.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="contuct-us" id="contuct-us">
+		<div class="contuct-us-body container">
+			<div class="contuct-us-info">
+				<h2 class="contuct-us-info-title">Связаться с нами</h2>
+				<div class="contuct-us-info-body">
+					<div class="phones-lise-wrapper">
+						<img src="./images/phone.svg" alt="">
+						<ul class="phones-list">
+							<li class="phones-list-item">+375(29)369-54-58</li>
+							<li class="phones-list-item">+375(44)728-50-16</li>
+						</ul>
+					</div>
+					<div class="contuct-us-info-map">
+						<img src="./images/location.svg" alt="">
+						<p>г. Минск, ул. Короля 2</p>
+					</div>
+				</div>
+			</div>
+			<form class="contuct-us-form">
+				<div class="contuct-us-form-body">
+					<div class="input-container">
+						<input id="name" placeholder="Имя" class="contuct-us-form-input input" required>
+						<label for="name">Имя</label>
+					</div>
+
+					<div class="input-container">
+						<input id="company" placeholder="Название компании" class="contuct-us-form-input input" required>
+						<label for="company">Название компании</label>
+					</div>
+
+
+					<div class="contuct-us-form-body-email-and-phone-wrapper">
+						<div class="input-container">
+							<input id="email" placeholder="Email" type="email" class="contuct-us-form-input input" required>
+							<label for="email">Email</label>
+						</div>
+
+						<div class="input-container">
+							<input id="phone" placeholder="Номер телефона" type="tel" class="contuct-us-form-input input" required>
+							<label for="phone">Номер телефона</label>
+						</div>
+					</div>
+					
+					<div class="contuct-us-form-body-checkbox checkbox">
+						<input type="checkbox" id="politics" required>
+						<label for="politics">
+							Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в <a href="" class="politics-link">Политике конфиденциальности</a>
+						</label>
+					</div>
+
+
+					<div class="contuct-us-button-wrapper">
+						<button class="contuct-us-form-button button" type="submit">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="footter-body container">
+		<img class="foooter-logo-image" src="./images/logo.svg" alt="InAssist Logo", width="277.68" height="131">
+		<div class="footer-address-info">
+			<p>
+				г.Минск, ул. Короля 2
+			</p>
+		</div>
+		<ul class="footer-contacts-list">
+			<li class="fotter-contacts-item">
+				+375(29)367-54-58
+			</li>
+			<li class="fotter-contacts-item">
+				+375(29)728-50-16
+			</li>
+		</ul>
+		<ul class="footer-social-media-list">
+			<li class="footer-social-media-item">
+				<a href="">
+					<img src="./images/tg.svg" alt="Telegram">
+				</a>
+			</li>
+			<li class="footer-social-media-item">
+				<a href="">
+					<img src="./images/inst.svg" alt="Telegram">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<div class="footter-bottom container">
+		<div class="footter-bottom-text">
+			<p>ООО "ИнАссист", УНП: 692272725 © 2025 <br> Политика конфиденциальности <br> Информация на сайте не является офертой и носит ознакомительный характер</p>
+		</div>
+	</div>
+</footer>
+
+</body>
+
+</html>
