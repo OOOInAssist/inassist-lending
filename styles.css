@@ -265,7 +265,7 @@ body:has(dialog[open]) {
 	--input-height: 42px;
 
 	--container-width: 1512px;
-	--container-padding-x: 220px;
+	--container-padding-x: 5%;
 
 	--transition-duration: 0.2s;
 }	
@@ -495,21 +495,27 @@ section {
 
 .modal-dialog {
   background-color: var(--color-navy-20);
-  width: 576px;
+  max-width: 576px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 0px;
+}
+
+.modal-dialog-body {
+  padding: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 50px;
-  border-radius: 20px;
-  border: 0px;
 }
 
 .modal-dialog-form-body {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding-inline: 30px;
   color: black;
 }
 
@@ -535,6 +541,11 @@ section {
   column-gap: 120px;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -572,6 +583,7 @@ section {
   color: var(--color-white);
   padding: 35px;
   justify-content: space-around;
+  max-height: 678px;
 }
 
 .about-image {
@@ -585,7 +597,7 @@ section {
   column-gap: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
-  flex: 1 2 auto;
+  flex: 1 0 auto;
 }
 
 .about-menu-item-body-description {
@@ -890,7 +902,7 @@ section {
   font-weight: bold;
 }
 
-@media (min-width: 1576px) {
+@media (min-width: 1218px) {
   .favors-item:nth-child(even) {
     clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
   }
@@ -900,7 +912,14 @@ section {
   }
 }
 
-@media (max-width: 1575px) {
+@media (max-width: 1425px) {
+  .about-menu-item-body {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 1218px) {
   .container {
     padding-inline: 20px;
   }
@@ -996,17 +1015,20 @@ section {
     line-height: 153%;
     font-weight: 800;
   }
-
-  .about-title {
-    font-size: 28px;
-  }
-
   .about-menu-item-body-title {
     font-size: 18px;
   }
 
   .about-menu-item-body-description {
     font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text-wrapper {
+    max-height: fit-content;
   }
 
   .about-text-wrapper {
