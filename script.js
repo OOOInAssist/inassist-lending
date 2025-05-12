@@ -23,4 +23,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
   }
   });
 });
-
+window.addEventListener("DOMContentLoaded", (event) => {
+  const headerBurger = document.querySelector(".header-burger-button");
+  headerBurger?.addEventListener('click', event => {
+     document.querySelector(".header-sidebar").style.display = "flex";
+  });
+});
+window.addEventListener("DOMContentLoaded", (event) => {
+  const headerClose = document.querySelector(".header-sidebar-close-button");
+  headerClose?.addEventListener('click', event => {
+     document.querySelector(".header-sidebar").style.display = "none";
+  });
+});

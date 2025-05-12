@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="vie wport" content="width=device-width, initial-scale=1">
 	<title>InAssist</title>
 	<link rel="stylesheet" href="./styles.css">
@@ -13,7 +15,7 @@
 
 <header class="header">
 	<div class="container header-body">
-		<a class="header-logo", href="/"><img class="header-logo-image" src="./images/logo.svg" alt="InAssist Logo", width="277.68" height="131"></a>
+		<a class="header-logo", href="/"><img class="header-logo-image" src="./images/logo.svg" alt="InAssist Logo"></a>
 		<nav class="header-menu">
 			<ul class="header-menu-list">
 				<li class="header-menu-item"><a href="#about" class="header-menu-link">О нас</a></li>
@@ -23,6 +25,11 @@
 		</nav>
 		<button class="header-button button" type="button" onclick="window.contuctUsDialog.showModal()">
 			Связаться с нами
+		</button>
+		<button class="header-burger-button" type="button">
+			<svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0.375 1.59375C0.375 1.12776 0.75276 0.75 1.21875 0.75H19.7812C20.2472 0.75 20.625 1.12776 20.625 1.59375C20.625 2.05974 20.2472 2.4375 19.7812 2.4375H1.21875C0.75276 2.4375 0.375 2.05974 0.375 1.59375ZM0.375 7.5C0.375 7.03401 0.75276 6.65625 1.21875 6.65625H19.7812C20.2472 6.65625 20.625 7.03401 20.625 7.5C20.625 7.96599 20.2472 8.34375 19.7812 8.34375H1.21875C0.75276 8.34375 0.375 7.96599 0.375 7.5ZM9.65625 13.4062C9.65625 12.9403 10.034 12.5625 10.5 12.5625H19.7812C20.2472 12.5625 20.625 12.9403 20.625 13.4062C20.625 13.8722 20.2472 14.25 19.7812 14.25H10.5C10.034 14.25 9.65625 13.8722 9.65625 13.4062Z" fill="#00A399"/>
+			</svg>
 		</button>
 	</div>
 
@@ -66,6 +73,26 @@
 			</div>
 		</form>
 	</dialog>
+
+	<div class="header-sidebar">
+		<button class="header-sidebar-close-button" type="button">
+			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.4999 9.075L1.9874 14.5875C1.78115 14.7937 1.51865 14.8969 1.1999 14.8969C0.881152 14.8969 0.618652 14.7937 0.412402 14.5875C0.206152 14.3812 0.103027 14.1188 0.103027 13.8C0.103027 13.4813 0.206152 13.2187 0.412402 13.0125L5.9249 7.5L0.412402 1.9875C0.206152 1.78125 0.103027 1.51875 0.103027 1.2C0.103027 0.88125 0.206152 0.61875 0.412402 0.4125C0.618652 0.20625 0.881152 0.103125 1.1999 0.103125C1.51865 0.103125 1.78115 0.20625 1.9874 0.4125L7.4999 5.925L13.0124 0.4125C13.2187 0.20625 13.4812 0.103125 13.7999 0.103125C14.1187 0.103125 14.3812 0.20625 14.5874 0.4125C14.7937 0.61875 14.8968 0.88125 14.8968 1.2C14.8968 1.51875 14.7937 1.78125 14.5874 1.9875L9.0749 7.5L14.5874 13.0125C14.7937 13.2187 14.8968 13.4813 14.8968 13.8C14.8968 14.1188 14.7937 14.3812 14.5874 14.5875C14.3812 14.7937 14.1187 14.8969 13.7999 14.8969C13.4812 14.8969 13.2187 14.7937 13.0124 14.5875L7.4999 9.075Z" fill="#00A399"/>
+			</svg>
+		</button>
+
+		<nav class="header-sidebar-menu">
+			<ul class="header-sidebar-menu-list">
+				<li class="header-sidebar-menu-item"><a href="#about" class="header-sidebar-menu-link">О нас</a></li>
+				<li class="header-sidebar-menu-item"><a href="#stages" class="header-sidebar-menu-link">Этапы работы</a></li>
+				<li class="header-sidebar-menu-item"><a href="#favors" class="header-sidebar-menu-link">Услуги</a></li>
+			</ul>
+		</nav>
+		<button class="header-sidebar-button button" type="button" onclick="window.contuctUsDialog.showModal()">
+			Связаться с нами
+		</button>
+	</div>
+
 </header>
 
 <main class="content">
@@ -198,30 +225,30 @@
 			<ul class="favors-list">
 				<li class="favors-item">
 					<div class="favors-card">
-						<div class="favors-card-body">
-							<h3 class="favors-card-body-title">Бизнес-Консалтинг</h3>
-							<div class="favors-card-body-text">
-								<p>Занимаемся разработкой бизнес-планов, инновационных проектов,технико-экономических обоснований. Поможем Вам привлечь финансирование и вступить в технопарк.</p>
+					<div class="favors-card-body">
+						<h3 class="favors-card-body-title">Бизнес-Консалтинг</h3>
+						<div class="favors-card-body-text">
+							<p>Занимаемся разработкой бизнес-планов, инновационных проектов,технико-экономических обоснований. Поможем Вам привлечь финансирование и вступить в технопарк.</p>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="favors-item">
 					<div class=favors-card>
-						<div class="favors-card-body">
-							<h3 class="favors-card-body-title">Рекламное продвижение</h3>
-							<div class="favors-card-body-text">
-								<p>Предлагаем профессиональное управление рекламными компаниями в Google Ads и Яндекс Директ. Привлечем к Вам новых клиентов и увеличим продажи.</p>
+					<div class="favors-card-body">
+						<h3 class="favors-card-body-title">Рекламное продвижение</h3>
+						<div class="favors-card-body-text">
+							<p>Предлагаем профессиональное управление рекламными компаниями в Google Ads и Яндекс Директ. Привлечем к Вам новых клиентов и увеличим продажи.</p>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="favors-item">
 					<div class="favors-card">
-						<div class="favors-card-body">
-							<h3 class="favors-card-body-title">IT-Консталтинг</h3>
-							<div class="favors-card-body-text">
-								<p>Создаем сайты и разрабатываем программные решения. Внедрим в Ваши бизнес-процессы цифровые технологии.</p>
+					<div class="favors-card-body">
+						<h3 class="favors-card-body-title">IT-Консталтинг</h3>
+						<div class="favors-card-body-text">
+							<p>Создаем сайты и разрабатываем программные решения. Внедрим в Ваши бизнес-процессы цифровые технологии.</p>
 							</div>
 						</div>
 					</div>
@@ -291,7 +318,7 @@
 
 <footer>
 	<div class="footter-body container">
-		<img class="foooter-logo-image" src="./images/logo.svg" alt="InAssist Logo", width="277.68" height="131">
+		<img class="foooter-logo-image" src="./images/logo.svg" alt="InAssist Logo">
 		<div class="footer-address-info">
 			<p>
 				г.Минск, ул. Короля 2
@@ -303,18 +330,6 @@
 			</li>
 			<li class="fotter-contacts-item">
 				+375(29)728-50-16
-			</li>
-		</ul>
-		<ul class="footer-social-media-list">
-			<li class="footer-social-media-item">
-				<a href="">
-					<img src="./images/tg.svg" alt="Telegram">
-				</a>
-			</li>
-			<li class="footer-social-media-item">
-				<a href="">
-					<img src="./images/inst.svg" alt="Telegram">
-				</a>
 			</li>
 		</ul>
 	</div>
