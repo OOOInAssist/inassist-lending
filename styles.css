@@ -503,11 +503,15 @@ section {
   border: 0px;
 }
 
+.sheet-header {
+  display: none;
+}
+
 .modal-dialog-body {
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   row-gap: 50px;
 }
@@ -1138,5 +1142,29 @@ section {
 
   .foooter-logo-image {
     display: none;
+  }
+
+  .modal-dialog {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .sheet-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+  }
+
+  .drag-handle {
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 10px;
+      cursor: grab;
+      margin: 0 auto;
   }
 }
