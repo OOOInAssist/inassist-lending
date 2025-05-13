@@ -537,21 +537,19 @@ section {
 .main-body {
 	display: flex;
 	align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   column-gap: 120px;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
-.main-image {
-  max-width: 100%;
-  height: auto;
-}
-
-
 .main-title {
 	font-size: 62px;
 	line-height: 120%;
+}
+
+.main-image {
+  width: 40%;
 }
 
 .main-info {
@@ -569,8 +567,8 @@ section {
 
 .about-body {
   display: flex;
+  justify-content: space-around;
   column-gap: 50px;
-  justify-content: center;
   padding-top: 80px;
 }
 
@@ -611,7 +609,6 @@ section {
 
 .about-bottom {
   display: flex;
-  justify-content: center;
   padding-top: 50px;
   padding-bottom: 70px;
 }
@@ -634,7 +631,6 @@ section {
 
 .stages-body {
   display: flex;
-  align-items: center;
   flex-direction: column;
   color: var(--color-white);
   background-color: var(--color-graphite);
@@ -708,7 +704,6 @@ section {
 .favors-list {
   display: flex;
   column-gap: 20px;
-  justify-content: center;
 }
 
 .favors-item {
