@@ -21,13 +21,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+const bottomSheet = document.querySelector(".modal-dialog");
+const dragHandle = document.querySelector(".drag-handle");
+
+let isDragging = false;
+let startY, startBottom;
 
 function startDragging(e) {
+    console.log("there");
     e.preventDefault();
     isDragging = true;
     startY = e.clientY;
-    startBottom =
-        parseInt(getComputedStyle(bottomSheet).bottom);
+    startBottom = parseInt(getComputedStyle(bottomSheet).bottom);
 
     document.addEventListener("mousemove", drag);
     document.addEventListener("mouseup", stopDragging);
@@ -44,10 +49,5 @@ function stopDragging() {
     document.removeEventListener("mousemove", drag);
     document.removeEventListener("mouseup", stopDragging);
 }
-
-const dragHandle = document.querySelector(".drag-handle");
-
-let isDragging = false;
-let startY, startBottom;
 
 dragHandle.addEventListener("mousedown", startDragging);
