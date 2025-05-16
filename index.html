@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 <header class="header">
 	<div class="container header-body">
 		<a class="header-logo", href="/"><img class="header-logo-image" src="./images/logo.svg" alt="InAssist Logo"></a>
@@ -23,7 +22,7 @@
 				<li class="header-menu-item"><a href="#favors" class="header-menu-link">Услуги</a></li>
 			</ul>
 		</nav>
-		<button class="header-button button" type="button" onclick="window.contuctUsDialog.showModal()">
+		<button class="header-button button" type="button" onclick="window.contactUsDialog.showModal()">
 			Связаться с нами
 		</button>
 		<button class="header-burger-button" type="button">
@@ -32,11 +31,32 @@
 			</svg>
 		</button>
 	</div>
+</header>
 
-	<dialog id="contuctUsDialog" class="modal-dialog">
-		<div class="sheet-header">
-			<div class="drag-handle"></div>
-        </div>
+<main class="content">
+	<div class="header-sidebar">
+
+		<div class="header-sidebar-menu-buttons">
+			<button class="header-sidebar-close-button" type="button">
+				<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.4999 9.075L1.9874 14.5875C1.78115 14.7937 1.51865 14.8969 1.1999 14.8969C0.881152 14.8969 0.618652 14.7937 0.412402 14.5875C0.206152 14.3812 0.103027 14.1188 0.103027 13.8C0.103027 13.4813 0.206152 13.2187 0.412402 13.0125L5.9249 7.5L0.412402 1.9875C0.206152 1.78125 0.103027 1.51875 0.103027 1.2C0.103027 0.88125 0.206152 0.61875 0.412402 0.4125C0.618652 0.20625 0.881152 0.103125 1.1999 0.103125C1.51865 0.103125 1.78115 0.20625 1.9874 0.4125L7.4999 5.925L13.0124 0.4125C13.2187 0.20625 13.4812 0.103125 13.7999 0.103125C14.1187 0.103125 14.3812 0.20625 14.5874 0.4125C14.7937 0.61875 14.8968 0.88125 14.8968 1.2C14.8968 1.51875 14.7937 1.78125 14.5874 1.9875L9.0749 7.5L14.5874 13.0125C14.7937 13.2187 14.8968 13.4813 14.8968 13.8C14.8968 14.1188 14.7937 14.3812 14.5874 14.5875C14.3812 14.7937 14.1187 14.8969 13.7999 14.8969C13.4812 14.8969 13.2187 14.7937 13.0124 14.5875L7.4999 9.075Z" fill="#00A399"/>
+				</svg>
+			</button>
+
+			<nav class="header-sidebar-menu">
+				<ul class="header-sidebar-menu-list">
+					<li class="header-sidebar-menu-item"><a href="#about" class="header-sidebar-menu-link">О нас</a></li>
+					<li class="header-sidebar-menu-item"><a href="#stages" class="header-sidebar-menu-link">Этапы работы</a></li>
+					<li class="header-sidebar-menu-item"><a href="#favors" class="header-sidebar-menu-link">Услуги</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<button class="header-sidebar-button button" type="button" onclick="window.contactUsDialog.showModal()">
+			Связаться с нами
+		</button>
+	</div>
+	<dialog id="contactUsDialog" class="modal-dialog">
 		<div class="modal-dialog-body">
 			<h1 class="modal-title">Связаться с нами</h1>
 			<form class="modal-dialog-form">
@@ -69,35 +89,12 @@
 						</label>
 					</div>
 					<div class="modal-dialog-form-wrapper">
-						<button class="contuct-us-form-button button" type="submit">Отправить</button>
+						<button class="contact-us-form-button button" type="submit">Отправить</button>
 					</div>
 				</div>
 			</form>
 		</div>
 	</dialog>
-
-	<div class="header-sidebar">
-		<button class="header-sidebar-close-button" type="button">
-			<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M7.4999 9.075L1.9874 14.5875C1.78115 14.7937 1.51865 14.8969 1.1999 14.8969C0.881152 14.8969 0.618652 14.7937 0.412402 14.5875C0.206152 14.3812 0.103027 14.1188 0.103027 13.8C0.103027 13.4813 0.206152 13.2187 0.412402 13.0125L5.9249 7.5L0.412402 1.9875C0.206152 1.78125 0.103027 1.51875 0.103027 1.2C0.103027 0.88125 0.206152 0.61875 0.412402 0.4125C0.618652 0.20625 0.881152 0.103125 1.1999 0.103125C1.51865 0.103125 1.78115 0.20625 1.9874 0.4125L7.4999 5.925L13.0124 0.4125C13.2187 0.20625 13.4812 0.103125 13.7999 0.103125C14.1187 0.103125 14.3812 0.20625 14.5874 0.4125C14.7937 0.61875 14.8968 0.88125 14.8968 1.2C14.8968 1.51875 14.7937 1.78125 14.5874 1.9875L9.0749 7.5L14.5874 13.0125C14.7937 13.2187 14.8968 13.4813 14.8968 13.8C14.8968 14.1188 14.7937 14.3812 14.5874 14.5875C14.3812 14.7937 14.1187 14.8969 13.7999 14.8969C13.4812 14.8969 13.2187 14.7937 13.0124 14.5875L7.4999 9.075Z" fill="#00A399"/>
-			</svg>
-		</button>
-
-		<nav class="header-sidebar-menu">
-			<ul class="header-sidebar-menu-list">
-				<li class="header-sidebar-menu-item"><a href="#about" class="header-sidebar-menu-link">О нас</a></li>
-				<li class="header-sidebar-menu-item"><a href="#stages" class="header-sidebar-menu-link">Этапы работы</a></li>
-				<li class="header-sidebar-menu-item"><a href="#favors" class="header-sidebar-menu-link">Услуги</a></li>
-			</ul>
-		</nav>
-		<button class="header-sidebar-button button" type="button" onclick="window.contuctUsDialog.showModal()">
-			Связаться с нами
-		</button>
-	</div>
-
-</header>
-
-<main class="content">
 	<section class="main">
 		<div class="main-body container">
 			<div class="main-info">
@@ -107,7 +104,7 @@
 					инновационного <br>
 					бизнеса
 				</h1>
-				<a class="main-create-ticket-button button" href="#contuct-us">Оставить заявку</a>
+				<a class="main-create-ticket-button button" href="#contact-us">Оставить заявку</a>
 			</div>
 			<img src="./images/main-image.svg" alt="InAssist" class="main-image">
 		</div>
@@ -168,7 +165,7 @@
 			</div>
 			<div class="about-bottom">
 				<div class="about-bottom-text">
-				<p>Доверьте нам развитие вашего бизнеса - и мы <br>Превратим ваши идеи в упешные результаты!</p>
+				<p>Доверьте нам развитие вашего бизнеса - и мы <br>Превратим ваши идеи в уcпешные результаты!</p>
 				</div>
 			</div>
 		</div>
@@ -252,30 +249,30 @@
 			<ul class="favors-list">
 				<li class="favors-item">
 					<div class="favors-card">
-					<div class="favors-card-body">
-						<h3 class="favors-card-body-title">Бизнес-Консалтинг</h3>
-						<div class="favors-card-body-text">
-							<p>Занимаемся разработкой бизнес-планов, инновационных проектов,технико-экономических обоснований. Поможем Вам привлечь финансирование и вступить в технопарк.</p>
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">Бизнес-Консалтинг</h3>
+							<div class="favors-card-body-text">
+								<p>Занимаемся разработкой бизнес-планов, инновационных проектов,технико-экономических обоснований. Поможем Вам привлечь финансирование и вступить в технопарк.</p>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="favors-item">
 					<div class=favors-card>
-					<div class="favors-card-body">
-						<h3 class="favors-card-body-title">Рекламное продвижение</h3>
-						<div class="favors-card-body-text">
-							<p>Предлагаем профессиональное управление рекламными компаниями в Google Ads и Яндекс Директ. Привлечем к Вам новых клиентов и увеличим продажи.</p>
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">Рекламное продвижение</h3>
+							<div class="favors-card-body-text">
+								<p>Предлагаем профессиональное управление рекламными компаниями в Google Ads и Яндекс Директ. Привлечем к Вам новых клиентов и увеличим продажи.</p>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="favors-item">
 					<div class="favors-card">
-					<div class="favors-card-body">
-						<h3 class="favors-card-body-title">IT-Консталтинг</h3>
-						<div class="favors-card-body-text">
-							<p>Создаем сайты и разрабатываем программные решения. Внедрим в Ваши бизнес-процессы цифровые технологии.</p>
+						<div class="favors-card-body">
+							<h3 class="favors-card-body-title">IT-Консталтинг</h3>
+							<div class="favors-card-body-text">
+								<p>Создаем сайты и разрабатываем программные решения. Внедрим в Ваши бизнес-процессы цифровые технологии.</p>
 							</div>
 						</div>
 					</div>
@@ -283,11 +280,11 @@
 			</ul>
 		</div>
 	</section>
-	<section class="contuct-us" id="contuct-us">
-		<div class="contuct-us-body container">
-			<div class="contuct-us-info">
-				<h2 class="contuct-us-info-title">Связаться с нами</h2>
-				<div class="contuct-us-info-body">
+	<section class="contact-us" id="contact-us">
+		<div class="contact-us-body container">
+			<div class="contact-us-info">
+				<h2 class="contact-us-info-title">Связаться с нами</h2>
+				<div class="contact-us-info-body">
 					<div class="phones-lise-wrapper">
 						<img src="./images/phone.svg" alt="">
 						<ul class="phones-list">
@@ -295,38 +292,38 @@
 							<li class="phones-list-item">+375(44)728-50-16</li>
 						</ul>
 					</div>
-					<div class="contuct-us-info-map">
+					<div class="contact-us-info-map">
 						<img src="./images/location.svg" alt="">
 						<p>г. Минск, ул. Короля 2</p>
 					</div>
 				</div>
 			</div>
-			<form class="contuct-us-form">
-				<div class="contuct-us-form-body">
+			<form class="contact-us-form">
+				<div class="contact-us-form-body">
 					<div class="input-container">
-						<input id="name" placeholder="Имя" class="contuct-us-form-input input" required>
+						<input id="name" placeholder="Имя" class="contact-us-form-input input" required>
 						<label for="name">Имя</label>
 					</div>
 
 					<div class="input-container">
-						<input id="company" placeholder="Название компании" class="contuct-us-form-input input" required>
+						<input id="company" placeholder="Название компании" class="contact-us-form-input input" required>
 						<label for="company">Название компании</label>
 					</div>
 
 
-					<div class="contuct-us-form-body-email-and-phone-wrapper">
+					<div class="contact-us-form-body-email-and-phone-wrapper">
 						<div class="input-container">
-							<input id="email" placeholder="Email" type="email" class="contuct-us-form-input input" required>
+							<input id="email" placeholder="Email" type="email" class="contact-us-form-input input" required>
 							<label for="email">Email</label>
 						</div>
 
 						<div class="input-container">
-							<input id="phone" placeholder="Номер телефона" type="tel" class="contuct-us-form-input input" required>
+							<input id="phone" placeholder="Номер телефона" type="tel" class="contact-us-form-input input" required>
 							<label for="phone">Номер телефона</label>
 						</div>
 					</div>
 					
-					<div class="contuct-us-form-body-checkbox checkbox">
+					<div class="contact-us-form-body-checkbox checkbox">
 						<input type="checkbox" id="politics" required>
 						<label for="politics">
 							Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих персональных данных для целей, указанных в <a href="" class="politics-link">Политике конфиденциальности</a>
@@ -334,8 +331,8 @@
 					</div>
 
 
-					<div class="contuct-us-button-wrapper">
-						<button class="contuct-us-form-button button" type="submit">Отправить</button>
+					<div class="contact-us-button-wrapper">
+						<button class="contact-us-form-button button" type="submit">Отправить</button>
 					</div>
 				</div>
 			</form>
@@ -344,27 +341,27 @@
 </main>
 
 <footer>
-	<div class="footter-body container">
-		<img class="foooter-logo-image" src="./images/logo.svg" alt="InAssist Logo">
+	<div class="footer-body container">
+		<img class="footer-logo-image" src="./images/logo.svg" alt="InAssist Logo">
 		<div class="footer-address-info">
 			<p>
 				г.Минск, ул. Короля 2
 			</p>
 		</div>
 		<ul class="footer-contacts-list">
-			<li class="fotter-contacts-item">
+			<li class="footer-contacts-item">
 				+375(29)367-54-58
 			</li>
-			<li class="fotter-contacts-item">
+			<li class="footer-contacts-item">
 				+375(29)728-50-16
 			</li>
 		</ul>
 	</div>
 	<hr>
-	<div class="footter-bottom container">
-		<div class="footter-bottom-text">
+	<div class="footer-bottom container">
+		<div class="footer-bottom-text">
 			<p>ООО "ИнАссист", УНП: 692272725 © 2025 <br> Политика конфиденциальности <br> Информация на сайте не является офертой и носит ознакомительный характер</p>
-		</div>
+		</div>							</div>
 	</div>
 </footer>
 
